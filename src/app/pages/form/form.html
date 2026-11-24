@@ -1,0 +1,52 @@
+<h1>{{id? 'Editar cliente' : 'Agregar cliente'}}</h1>
+<form [formGroup]="clienteForm" (ngSubmit)="onSubmit()">
+    <fieldset>
+        <label for="cliente-nombre">Nombre: </label>
+        <input type="text" id="cliente-nombre" formControlName="nombre">
+        @if (nombreF.hasError('required') && nombreF.touched) {
+            <p class="msjError">El nombre es obligatorio</p>
+        }@else if (nombreF.hasError('minlength') && nombreF.touched) {
+            <p class="msjError">El nombre debe ser mayor a 3 carcteres</p>
+        }
+    </fieldset>
+
+    <fieldset>
+        <label for="cliente-empresa">Empresa:</label>
+        <input type="text" id="cliente-empresa" formControlName="empresa">
+        @if (empresaF.invalid && emailF.touched) {
+            <p class="msjError">La empresa es obligatoria</p>
+        }
+    </fieldset>
+
+    <fieldset>
+        <label for="cliente-email">Email: </label>
+        <input type="text" id="cliente-email" formControlName="email">
+        @if (emailF.hasError('required') && emailF.touched) {
+            <p class="msjError">El email es obligatorio</p>
+        }@else if (emailF.hasError('maxlength') && emailF.touched) {
+            <p class="msjError">El email debe ser menor a 20 carcteres</p>
+        }@else if (emailF.hasError('email') && emailF.touched) {
+            <p class="msjError">Formato incorrecto</p>
+        }
+    </fieldset>
+
+    <fieldset>
+        <label for="cliente-telefono">Telefono:</label>
+        <input type="number" id="cliente-telefono" formControlName="telefono">
+        @if (telefonoF.invalid && telefonoF.touched) {
+            <p class="msjError">El telefono es obligatorio</p>
+        }
+    </fieldset>
+
+    <fieldset>
+        <label for="cliente-comentarios">Comentarios: </label>
+        <textarea id="cliente-comentarios" formControlName="comentarios"></textarea>
+        @if(comentariosF.hasError('required') && comentariosF.touched){
+            <p class="msjError">El comentario es obligatorio</p>
+        }@else if (comentariosF.hasError('maxlength') && comentariosF.touched) {
+            <p class="msjError">El comentario debe ser menor a 200 caracteres</p>
+        }
+    </fieldset>
+
+    <button [disabled]="clienteForm.invalid">{{id? 'Actualizar' : 'Agregar'}}</button>
+</form>

@@ -1,0 +1,12 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1.5%;
+    margin: 2%;
+}
+a{
+    text-decoration-line: none;
+    color: black;
+    font-size: large;
+}

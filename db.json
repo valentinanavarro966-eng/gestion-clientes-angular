@@ -1,0 +1,61 @@
+{
+  "clientes": [
+    {
+      "id": "1",
+      "nombre": "Ana Pérez",
+      "empresa": "TechNova",
+      "email": "ana.perez@technova.com",
+      "telefono": "1123456789",
+      "comentarios": "Cliente preferencial, seguimiento trimestral."
+    },
+    {
+      "id": "2",
+      "nombre": "Carlos Díaz",
+      "empresa": "Innova SA",
+      "email": "carlos.diaz@innova.com",
+      "telefono": "1145678901",
+      "comentarios": "Solicita presupuesto cada trimestre."
+    },
+    {
+      "id": "3",
+      "nombre": "Lucía Gómez",
+      "empresa": "DataCorp",
+      "email": "lucia.gomez@datacorp.com",
+      "telefono": "1133344455",
+      "comentarios": ""
+    },
+    {
+      "id": "ev1na1AbUy4",
+      "nombre": "Valentina",
+      "empresa": "Accenture",
+      "email": "valenNava@gmail.com",
+      "telefono": 233121509,
+      "comentarios": "Muy responsable ;)"
+    },
+    {
+      "nombre": "Sofia",
+      "empresa": "AeroGest",
+      "email": "sofi@gmail.com",
+      "telefono": 22451342223,
+      "comentarios": "Comportamiento regular ",
+      "id": "ZwZC2HUY74o"
+    },
+    {
+      "nombre": "celene",
+      "empresa": "podologa de peces Lanus",
+      "email": "celeneaa27@gmail.com",
+      "telefono": 2236820759,
+      "comentarios": "mi animal espiritual es echever peinado ",
+      "id": "AQ6pFEdQgPs"
+    },
+    {
+      "nombre": "guadalupe",
+      "empresa": "terapeuta de nutrias Chaco",
+      "email": "gpasciulli@gmail.com",
+      "telefono": 2235218680,
+      "comentarios": "mi mision de vida es ser hanna montana",
+      "id": "hBiGczOBJLQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

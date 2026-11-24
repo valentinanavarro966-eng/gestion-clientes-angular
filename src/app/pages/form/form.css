@@ -1,0 +1,37 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(10, 10, 65);
+    background-color: rgb(115, 115, 175);
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+fieldset{
+    width: 50%;
+    margin: 0.5%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+input{
+ padding: 2%;
+}
+label{
+    font-size: large;
+}
+button{
+    padding: 2%;
+    margin: 1%;
+    font-size: large;
+    border-radius: 3%;
+}
+h1{
+    text-align: center;
+}
+.msjError{
+    color: brown;
+}

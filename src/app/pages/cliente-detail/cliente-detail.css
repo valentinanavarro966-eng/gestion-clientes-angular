@@ -1,0 +1,32 @@
+#afuera{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    border: 5px solid rgb(20, 20, 85);
+    border-radius: 2%;
+    background-color: rgb(127, 127, 192);
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    
+}
+#dentro{
+    padding: 1%;
+    width: 100%;
+    margin-left: 10%;
+}
+button{
+    padding: 4%;
+    font-size: large;
+    border-radius: 2%;
+    margin:3%;
+
+}
+#botones{
+    margin-left: 75%;
+
+}
+
+

@@ -1,0 +1,18 @@
+<div id="afuera">
+
+@if (selectedCliente(); as cliente) {
+    <div id="dentro">
+    <h1>Nombre: {{cliente.nombre}}</h1>
+    <h3>Empresa: {{cliente.empresa}}</h3>
+    <h3>Email: {{cliente.email}}</h3>
+    <h3>Telefono: {{cliente.telefono}}</h3>
+    <h3>Comentarios: {{cliente.comentarios}}</h3>
+ 
+    <div id="botones">
+    <button [routerLink]="['/form-edit', cliente.id]">Editar</button>
+    <button (click)="borrarCliente(cliente.id)">Borrar</button>
+    </div>
+    </div>
+}
+</div>
+

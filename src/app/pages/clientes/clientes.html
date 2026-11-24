@@ -1,0 +1,10 @@
+<div id="general">
+    @for (c of clientes(); track $index) {
+        <div id="interior">
+        <h1>{{c.nombre}}</h1>
+        <h3>Empresa: {{c.empresa}}</h3>
+        <button [routerLink]="['/cliente', c.id]">Ver detalle</button>
+        </div>
+    }
+
+</div>

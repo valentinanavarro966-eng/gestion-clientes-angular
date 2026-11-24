@@ -1,0 +1,20 @@
+#contendor{
+    display: grid;
+    grid-template-areas: "nav"
+                        "main"
+                        "footer";
+    grid-template-rows: 10% auto 20%;
+    min-height: 100vh;
+}
+#c1{
+    grid-area: nav;
+    background-color: rgb(47, 126, 201);
+}
+#c2{
+    grid-area: main;
+    background-color: rgb(146, 146, 211);
+}
+#c3{
+    grid-area: footer;
+    background-color: rgb(12, 12, 83);
+}
